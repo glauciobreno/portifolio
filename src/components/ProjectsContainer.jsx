@@ -41,7 +41,7 @@ const ProjectsContainer = () => {
         "Meu portfólio pessoal é um projeto desenvolvido com React e Sass. Ele foi criado com o objetivo de mostrar meu trabalho, habilidades e experiências como desenvolvedor. O portfólio é uma representação visual das minhas conquistas, projetos e conhecimentos na área de desenvolvimento de software",
       link: "https://github.com/glauciobreno/portifolio",
       img: portifolio,
-      deploy: "",
+      deploy: "https://portifolio-1m4dzg08k-glauciobreno.vercel.app/",
     },
   ];
 
