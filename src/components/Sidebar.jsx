@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Avatar from "../img/eu.jpg";
 
 import "../styles/components/sidebar.sass";
@@ -6,6 +6,8 @@ import SocialNetwork from "./SocialNetwork";
 import InformationContainer from "./InformationContainer";
 
 const Sidebar = () => {
+  const curriculo =
+    "https://drive.google.com/uc?export=download&id=1CQiDNHsVbLcCT3IcPCb-WN7WO0TJq7Fw";
   return (
     <aside id="sidebar">
       <img src={Avatar} alt="Glaucio Breno" />
@@ -15,9 +17,14 @@ const Sidebar = () => {
       </div>
       <SocialNetwork />
       <InformationContainer />
-      <p href="" className="btn">
-        Download curriculo
-      </p>
+      <a
+        href={curriculo}
+        target="_blank"
+        className="btn"
+        alt="baixar curriculo"
+      >
+        Download currículo
+      </a>
     </aside>
   );
 };

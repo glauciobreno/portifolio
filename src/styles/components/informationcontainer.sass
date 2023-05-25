@@ -1,6 +1,6 @@
 @use '../variables'
-@use '../mixins'
-
+@use '../mixins' 
+    
 #information
     @include mixins.center
     flex-direction: column
@@ -12,37 +12,35 @@
     border-radius: variables.$card-border-radius
 
     .info-card
-      @include mixins.center
-      justify-content: start
-      gap: 1rem
-      padding-bottom: .8rem
-      margin-bottom: .8rem
-      border-bottom: 1px solid #444
-      width: 100%
-      
-      .h3
-          color: variables.$text-color-secondary
-          font-size: .8rem
-          margin-bottom: 5rem
-      
-      p
-          color: variables.$text-color
-          font-weight: bold
+        @include mixins.center
+        justify-content: start
+        gap: 1rem
+        padding-bottom: .8rem
+        margin-bottom: .8rem
+        border-bottom: 1px solid #444
+        width: 100%
 
-      svg
-          background-color: variables.$bg-color
-          padding: .4rem
-          width: 2rem
-          height: 2rem
-          border-radius: variables.$card-border-radius
+        h3
+            color: variables.$text-color-secondary
+            font-size: .8rem
+            margin-bottom: .5rem
 
-      #phone-icon
-          color: #e93b81
+        p
+            color: variables.$text-color
+            font-weight: bold
 
-      #email-icon
-          color: #6ab5b9
+        svg
+            background-color: variables.$bg-color
+            padding: 0.4rem
+            width: 2rem
+            height: 2rem
+            border-radius: variables.$card-border-radius
 
-      #pin-icon
-          color: #c17ceb
+        #phone-icon
+            color: #e93b81
 
+        #pin-icon
+            color: #6ab5b9
 
+        #email-icon
+            color: #c17ceb
